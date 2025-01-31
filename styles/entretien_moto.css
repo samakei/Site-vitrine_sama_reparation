@@ -30,7 +30,7 @@ body {
 }
 
 .nav-bar a:hover {
-  border-top-color: #0065fc;
+  border-top-color: #f0a500;
 }
 .nav-bar a:hover {
   color: #0065fc;
@@ -78,6 +78,16 @@ header h1 {
 
 /* Mobile : Masquer le menu */
 @media (max-width: 768px) {
+   h1{
+    font-size: 23px;
+    
+  }
+  h2{
+    font-size: 17px;
+  }
+  .cta {
+    font-size: 1rem;
+  }
   .burger-menu {
     display: block; /* Affiche le bouton burger sur mobile */
     padding: 0px 25px 90px 20px;
@@ -93,8 +103,7 @@ header h1 {
     position: absolute;
     top: 90px;
     right: 0;
-    left: 0;
-    padding: 10px 0;
+    padding: 10px 25px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
@@ -105,6 +114,7 @@ header h1 {
   .nav-bar a {
     padding: 10px 20px;
     border-bottom: 1px solid #333;
+    margin: 5px;
   }
 
   .nav-bar a:last-child {

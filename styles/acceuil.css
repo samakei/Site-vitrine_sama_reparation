@@ -6,37 +6,26 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* HEADER */
-.header {
-   display: flex;
-  width: 100%;
-  height: 150px;
-  box-shadow: 0px 5px 5px lightgrey;
-  margin-bottom: 5px;
-  color: #666666;
-}
-/* navlink */
 .logo {
   margin-right: auto;
   max-width: 25%;
   height: 100%;
   padding: 15px 0px 0px 20px;
 }
-
 .logo img {
- height: 90px;
- width: 100%;
- border-radius: 60px 60px 10px 10px;
+    height: 90px;
+    border-radius: 60px 60px 10px 10px;
+    margin-bottom: 20px;
+  }
+.header {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  box-shadow: 0px 5px 5px lightgrey;
+  margin-bottom: 5px;
+  color: #666666;
 }
 
-.burger-menu {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    color: #f0a500;
-    cursor: pointer;
-}
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -54,15 +43,54 @@ body {
   gap: 15px;
 }
 
-.nav-bar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.nav-bar a:hover {
+  border-top-color: #f0a500;
+}
+.nav-bar a:hover {
+  color: #0065fc;
+}
+#section-services{
+  padding: 20px;
+}
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
 }
 
-.nav-bar a:hover {
-    color: #f0a500;
+header h1 {
+  font-size: 20px;
 }
+
+/* Bouton Burger */
+.burger-menu {
+  font-size: 40px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Caché sur les grands écrans */
+}
+
+.burger-menu:focus {
+  outline: none;
+}
+
+/* Navigation */
+.nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
 
 /* CARROUSEL */
 .carrousel {
@@ -162,33 +190,38 @@ footer {
     color: white;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE
+/* Mobile : Masquer le menu */
 @media (max-width: 768px) {
-   .logo img{
-     width: auto;
-      height: 70px;
-    }
-    .burger-menu {
-        display: block;
-         padding: 0px 25px 90px 20px;
-       
-    }
+  .logo img{
+    width: auto;
+    height: 70px;
+  }
+  .burger-menu {
+    display: block; /* Affiche le bouton burger sur mobile */
+    padding: 0px 25px 90px 20px;
+  }
 
-    .nav-bar {
-        display: none;
-        flex-direction: column;
-        background: #222;
-        top: 90px;
-        right: 0;
-        text-align: right;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .nav-bar.active {
-        display: flex;
-    }
-    .nav-bar a {
+  .nav-bar {
+    display: none; /* Cache le menu par défaut */
+    flex-direction: column;
+    background-color: #222;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    padding: 10px 25px;
+    text-align: right;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-bar.active {
+    display: flex; /* Affiche le menu lorsqu'il est actif */
+  }
+
+  .nav-bar a {
     padding: 10px 20px;
     border-bottom: 1px solid #333;
+    margin: 5px;
   }
 
   .nav-bar a:last-child {
@@ -201,16 +234,12 @@ footer {
   .header {
     background-color: #222;
   }
-  .slide-image img{
-    width: auto;
-    height: auto;
-  }
-
-    .posts-container {
+  .posts-container {
         flex-direction: column;
         align-items: center;
     }
 }
+
 
 /* Carrousel */
 #carrousels {
@@ -245,64 +274,18 @@ footer {
   margin-bottom: 32px;
 }
 
+
 /* Boutons de navigation */
-/*Début  */
-.logo {
-  margin-right: auto;
-  max-width: 25%;
-  height: 100%;
-  padding: 15px 0px 0px 20px;
-
-  img {
-    width: auto;
-    border-radius: 60px 60px 10px 10px;
-  }
-}
-.nav-bar a {
-  font-size: 20px;
-  margin-top: 30px;
-  margin: 2rem;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-  border-top: 3px solid transparent;
-  color: black;
-  font-weight: bold;
-  gap: 15px;
-}
-
-.nav-bar a:hover {
-  border-top-color: #0065fc;
-}
-.nav-bar a:hover {
-  color: #0065fc;
-}
-
-/* Bouton Burger */
-.burger-menu {
-  font-size: 40px;
-  color: #fff;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: none; /* Caché sur les grands écrans */
-}
-
-.burger-menu:focus {
-  outline: none;
-}
-
-/* Navigation */
-.nav-bar {
-  display: flex;
-  gap: 20px;
-}
 
 .nav-bar a {
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s;
 }
-/* Boutons de navigation */
+
+.burger-menu:focus {
+  outline: none;
+}
 .prev, .next {
   position: absolute;
   top: 50%;
