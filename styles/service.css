@@ -1,0 +1,351 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0px;
+}
+
+
+.logo {
+  margin-right: auto;
+  max-width: 25%;
+  height: 100%;
+  padding: 15px 0px 0px 20px;
+}
+.logo img {
+    height: 90px;
+    border-radius: 60px 60px 10px 10px;
+    margin-bottom: 20px;
+  }
+.header {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  box-shadow: 0px 5px 5px lightgrey;
+  margin-bottom: 5px;
+  color: #666666;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar a {
+  font-size: 20px;
+  margin-top: 30px;
+  margin: 2rem;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  border-top: 3px solid transparent;
+  color: black;
+  font-weight: bold;
+  gap: 15px;
+}
+
+.nav-bar a:hover {
+  border-top-color: #f0a500;
+}
+.nav-bar a:hover {
+  color: #0065fc;
+}
+#section-services{
+  padding: 20px;
+}
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+/* Bouton Burger */
+.burger-menu {
+  font-size: 40px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Caché sur les grands écrans */
+}
+
+.burger-menu:focus {
+  outline: none;
+}
+
+/* Navigation */
+.nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+/* Mobile : Masquer le menu */
+@media (max-width: 768px) {
+  .logo img{
+    width: auto;
+    height: 70px;
+  }
+  .burger-menu {
+    display: block; /* Affiche le bouton burger sur mobile */
+    padding: 0px 25px 90px 20px;
+  }
+
+  .nav-bar {
+    display: none; /* Cache le menu par défaut */
+    flex-direction: column;
+    background-color: #222;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    padding: 10px 20;
+    text-align: right;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-bar.active {
+    display: flex; /* Affiche le menu lorsqu'il est actif */
+  }
+
+  .nav-bar a {
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;
+  }
+
+  .nav-bar a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-bar a {
+    color: #fff;
+  }
+  .header {
+    background-color: #222;
+  }
+}
+
+/* Conteneur des cartes */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+/* Style des cartes */
+.card-service, 
+.card-accessoires{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+.card-service:hover, 
+.card-accessoires:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Titres des cartes */
+.card-service h2, 
+.card-accessoires h2 {
+    color: #222;
+    font-size: 22px;
+    border-bottom: 3px solid #f0a500;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Liste des services et accessoires */
+.card-service ul, 
+.card-accessoires ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.card-service li, 
+.card-accessoires li {
+    padding: 8px 0;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-service li:last-child, 
+.card-accessoires li:last-child {
+    border-bottom: none;
+}
+/* fin de prémière section */
+
+
+/* Style du titre */
+.marque {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f0a500;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Conteneur des cartes */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style des articles */
+.service {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Titres des articles */
+.service h2 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f0a500;
+    padding-bottom: 5px;
+}
+
+/* Paragraphe des services */
+.service p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 90%;
+    }
+}
+
+/* Mise en page responsive */
+@media screen and (min-width: 380px) and (max-width: 768px) {
+  
+  #section-services {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+   .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-service, 
+    .card-accessoires {
+        width: 90%;
+    }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .moto {
+    display: none;
+  }
+  .marque{
+    font-weight: 100px;
+    padding: 5px;
+  }
+}
+/* Section Contact */
+.contact {
+    background: #222;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+/* Titre */
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f0a500;
+    border-bottom: 3px solid #f0a500;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Texte */
+.contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Infos en gras */
+.contact strong {
+    color: #f0a500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact {
+        padding: 30px 15px;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
