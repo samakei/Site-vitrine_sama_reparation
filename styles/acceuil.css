@@ -186,7 +186,7 @@ footer {
 @media (max-width: 768px) {
   .logo img{
     width: auto;
-    height: 70px;
+    height: 60px;
   }
   .burger-menu {
     display: block; /* Affiche le bouton burger sur mobile */
