@@ -290,7 +290,7 @@ footer {
   text-align: center;
   transition: 0.3s;
   width: 90%; /* Meilleure adaptation mobile */
-  max-width: 200px;
+  max-width: 250px;
   margin-bottom: 32px;
 }
 
@@ -347,6 +347,7 @@ footer {
   .slide-text {
     font-size: 14px;
     padding: 8px 15px;
+    max-width: 200px;
   }
 
   .prev, .next {
