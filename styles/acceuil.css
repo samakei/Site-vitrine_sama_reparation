@@ -1,4 +1,4 @@
-/* Reset */
+/* style avec css */
 body {
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ body {
   width: 100%;
   height: 150px;
   box-shadow: 0px 5px 5px lightgrey;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   color: #666666;
 }
 
@@ -92,30 +92,6 @@ header h1 {
 }
 
 
-/* CARROUSEL */
-.carrousel {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    position: relative;
-    border-radius: 20px 0px;
-    
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-   
-   
-}
-
-.slide {
-    width: 100%;
-    height: auto;
-    background: url('/assets/slideshow/slide1.jpg') center/cover;
-   object-fit: cover;
-
-}
 
 /* BIENVENUE */
 .welcome {
@@ -162,6 +138,21 @@ header h1 {
 .post a {
     color: #f0a500;
     text-decoration: none;
+}
+/*lire plus */
+.hidden-content {
+    display: none;
+}
+
+/* button js lire plus à suprimer plus tard 
+.toggle-btn{
+text-decoration: none;
+color: #fff;
+cursor: pointer;
+background-color: #f0a500;
+border-radius: 20px;
+padding: 5px;
+border: #f0a500;
 }
 
 /* CONTACT */
@@ -212,6 +203,7 @@ footer {
     padding: 10px 25px;
     text-align: right;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
   }
 
   .nav-bar.active {
@@ -234,75 +226,94 @@ footer {
   .header {
     background-color: #222;
   }
+  
   .posts-container {
         flex-direction: column;
         align-items: center;
     }
+    
+}
+/* CARROUSEL */
+.carrousel {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+     border-radius: 10px;
 }
 
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+   
+   
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    background: url('/assets/slideshow/slide1.jpg') center/cover;
+   object-fit: cover;
+
+}
 
 /* Carrousel */
 #carrousels {
   position: relative;
   width: 100%;
   max-width: 800px;
-  margin: auto;
+  margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
 }
 
+/* Images */
 .slide-image {
   width: 100%;
-  height: 500px;
+  height: 450px; /* Taille ajustée */
   object-fit: cover;
   background-repeat: no-repeat;
 }
 
+/* Texte sur l'image */
 .slide-text {
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(30, 30, 30, 0.7);
+  background: rgba(30, 30, 30, 0.8);
   color: white;
   padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 18px;
+  border-radius: 8px;
+  font-size: 16px;
   text-align: center;
+  transition: 0.3s;
+  width: 90%; /* Meilleure adaptation mobile */
+  max-width: 200px;
   margin-bottom: 32px;
 }
 
-
 /* Boutons de navigation */
-
-.nav-bar a {
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s;
-}
-
-.burger-menu:focus {
-  outline: none;
-}
 .prev, .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 12px 18px;
   cursor: pointer;
   font-size: 24px;
   border-radius: 50%;
+  transition: 0.3s;
 }
+
 .prev { left: 10px; }
 .next { right: 10px; }
 
 .prev:hover, .next:hover {
-  background: rgba(255, 165, 0, 0.8);
+  background: rgba(255, 165, 0, 0.9);
 }
 
 /* Indicateurs (dots) */
@@ -319,22 +330,48 @@ footer {
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .dot.active {
   background-color: #f0a500;
-}
-/*lire plus */
-.hidden-content {
-    display: none;
+  transform: scale(1.2);
 }
 
-.toggle-btn{
-text-decoration: none;
-color: #fff;
-cursor: pointer;
-background-color: #f0a500;
-border-radius: 20px;
-padding: 5px;
-border: #f0a500;
+/* 📱 Responsive design */
+@media screen and (max-width: 768px) {
+  .slide-image {
+    height: 300px; /* Réduction de la hauteur pour mobile */
+  }
+
+  .slide-text {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .prev, .next {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slide-image {
+    height: 250px;
+  }
+
+  .slide-text {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .prev, .next {
+    padding: 8px;
+    font-size: 18px;
+  }
 }

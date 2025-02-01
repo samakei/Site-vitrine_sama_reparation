@@ -10,8 +10,13 @@ const slides = [
   { image: "/assets/slideshow/slide8.jpg", tagLine: "Votre satisfaction, notre priorité" },
 ];
 
-// Sélection des éléments HTML
+// Sélection du carrousel
 const carrousel = document.querySelector("#carrousels");
+if (!carrousel) {
+  console.error("⚠️ ERREUR : Élément #carrousels introuvable !");
+}
+
+// Création des éléments dynamiques
 const slideImage = document.createElement("img");
 const slideText = document.createElement("p");
 const prevButton = document.createElement("button");
@@ -20,16 +25,16 @@ const dotsContainer = document.createElement("div");
 
 let currentIndex = 0; // Index actuel du slide
 
-// Configuration des boutons
+// Configuration des éléments
+slideImage.classList.add("slide-image");
+slideImage.alt = "Image du carrousel"; // Ajout d’un alt pour l'accessibilité
+slideText.classList.add("slide-text");
+dotsContainer.classList.add("dots");
+
 prevButton.innerText = "❮";
 nextButton.innerText = "❯";
 prevButton.classList.add("prev");
 nextButton.classList.add("next");
-
-// Configuration des éléments
-slideImage.classList.add("slide-image");
-slideText.classList.add("slide-text");
-dotsContainer.classList.add("dots");
 
 // Ajout des éléments au DOM
 carrousel.appendChild(slideImage);
@@ -38,7 +43,7 @@ carrousel.appendChild(prevButton);
 carrousel.appendChild(nextButton);
 carrousel.appendChild(dotsContainer);
 
-// Génération des dots
+// Génération des dots dynamiquement
 slides.forEach((_, index) => {
   const dot = document.createElement("span");
   dot.classList.add("dot");
@@ -55,7 +60,7 @@ function updateSlide(index) {
   });
 }
 
-// Gestion des boutons
+// Écouteurs d'événements des boutons
 prevButton.addEventListener("click", () => {
   currentIndex = (currentIndex - 1 + slides.length) % slides.length;
   updateSlide(currentIndex);
@@ -66,7 +71,7 @@ nextButton.addEventListener("click", () => {
   updateSlide(currentIndex);
 });
 
-// Gestion des dots
+// Ajout des événements sur les dots après leur création
 document.querySelectorAll(".dot").forEach((dot, index) => {
   dot.addEventListener("click", () => {
     currentIndex = index;
@@ -82,13 +87,13 @@ setInterval(() => {
   currentIndex = (currentIndex + 1) % slides.length;
   updateSlide(currentIndex);
 }, 5000);
-// fin de carrousel
-
 
 // Déclaration lire plus
+/*
 document.querySelector(".toggle-btn").addEventListener("click", function() {
     const content = document.querySelector(".hidden-content");
     content.style.display = content.style.display === "none" ? "block" : "none";
     this.textContent = content.style.display === "none" ? "Lire plus" : "Lire moins";
 });
 // fin
+*/
