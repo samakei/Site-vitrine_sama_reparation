@@ -226,6 +226,9 @@ footer {
   .header {
     background-color: #222;
   }
+  h1{
+  font-size: 17px;
+ }
   
   .posts-container {
         flex-direction: column;
