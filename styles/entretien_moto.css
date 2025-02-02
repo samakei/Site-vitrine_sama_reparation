@@ -132,6 +132,13 @@ header h1 {
   .header {
     background-color: #222;
   }
+  #contact {
+  font-size: 17px;
+}  
+#contact p{
+  font-size: 14px;
+}
+
 }
 
 /* fin */

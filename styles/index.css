@@ -226,15 +226,33 @@ footer {
   .header {
     background-color: #222;
   }
-  h1{
-  font-size: 17px;
+  .welcome h1{
+  font-size: 20.5px;
  }
-  
+ .welcome p{
+  font-size: 16px;
+ }
+ 
+.recent-posts h2{
+  font-size: 20.5px;
+}
+.recent-posts h3{
+  font-size: 16px;
+}
+.recent-posts p{
+  font-size: 14px;
+}
   .posts-container {
         flex-direction: column;
         align-items: center;
     }
-    
+.contact {
+  font-size: 15px;
+}  
+.contact p{
+  font-size: 14px;
+}
+
 }
 /* CARROUSEL */
 .carrousel {
@@ -257,7 +275,6 @@ footer {
     height: auto;
     background: url('/assets/slideshow/slide1.jpg') center/cover;
    object-fit: cover;
-
 }
 
 /* Carrousel */
