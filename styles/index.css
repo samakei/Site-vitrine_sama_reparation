@@ -1,10 +1,17 @@
+html, body {
+  overflow-x: hidden; /* Bloque le scroll horizontal */
+  width: 100%; /* Empêche les débordements */
+}
+
 /* style avec css */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    
 }
+
 
 .logo {
   margin-right: auto;
@@ -231,6 +238,7 @@ footer {
  }
  .welcome p{
   font-size: 16px;
+  
  }
  
 .recent-posts h2{
@@ -241,16 +249,22 @@ footer {
 }
 .recent-posts p{
   font-size: 14px;
+  
+}
+.post {
+  width: auto;
 }
   .posts-container {
         flex-direction: column;
         align-items: center;
+       
     }
 .contact {
   font-size: 15px;
 }  
 .contact p{
   font-size: 14px;
+  flex-wrap: wrap;
 }
 
 }
@@ -360,8 +374,13 @@ footer {
 
 /* 📱 Responsive design */
 @media screen and (max-width: 768px) {
+  #carrousels{
+    width: auto;
+    max-width: 365px;
+  }
   .slide-image {
     height: 300px; /* Réduction de la hauteur pour mobile */
+    align-items: center;
   }
 
   .slide-text {
@@ -381,7 +400,10 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
+ #carrousels{
+  max-width: 310px;
+ }
   .slide-image {
     height: 250px;
   }

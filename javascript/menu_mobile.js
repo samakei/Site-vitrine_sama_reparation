@@ -5,3 +5,6 @@ const navBar = document.querySelector(".nav-bar");
 burgerMenu.addEventListener("click", () => {
   navBar.classList.toggle("active"); // Ajoute ou enlève la classe 'active'
 });
+
+
+
