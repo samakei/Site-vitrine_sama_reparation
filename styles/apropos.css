@@ -1,6 +1,7 @@
 html, body {
   overflow-x: hidden; /* Bloque le scroll horizontal */
   width: 100%; /* Empêche les débordements */
+  border: #f4f4f9;
 }
 
 body {
