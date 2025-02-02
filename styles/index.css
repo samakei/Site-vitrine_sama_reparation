@@ -376,7 +376,7 @@ footer {
 @media screen and (max-width: 768px) {
   #carrousels{
     width: auto;
-    max-width: 365px;
+    max-width: 400px;
   }
   .slide-image {
     height: 300px; /* Réduction de la hauteur pour mobile */
@@ -402,7 +402,7 @@ footer {
 
 @media screen and (max-width: 380px) {
  #carrousels{
-  max-width: 310px;
+  max-width: 315px;
  }
   .slide-image {
     height: 250px;
