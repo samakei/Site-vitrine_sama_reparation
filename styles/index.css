@@ -443,7 +443,21 @@ footer {
   }
 }
 
-/* fin de style
+/* fin de style*
 
+.testimonials {
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.testimonial {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  border-left: 5px solid orange;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
  
