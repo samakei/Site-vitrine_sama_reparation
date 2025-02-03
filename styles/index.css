@@ -75,7 +75,7 @@ header h1 {
 
 /* Bouton Burger */
 .burger-menu {
-  position: fixed;
+  position: relative;
   font-size: 50px;
   color: #fff;
   background: none;
@@ -90,9 +90,9 @@ header h1 {
 }
 /* Styles par défaut */
  .close-menu {
-  position: fixed;
+  position: absolute;
   top: 20px;
-  right: 10px;
+  right: 50px;
   background: none;
   border: none;
   font-size: 40px;
