@@ -8,6 +8,7 @@ const slides = [
   { image: "/assets/slideshow/slide6.jpg", tagLine: "Passion & performance" },
   { image: "/assets/slideshow/slide7.jpg", tagLine: "SAMA Réparation" },
   { image: "/assets/slideshow/slide8.jpg", tagLine: "Votre satisfaction, notre priorité" },
+  { image: "/assets/slideshow/slide9.jpg", tagLine: "Vente d'essences" },
 ];
 
 // Sélection du carrousel
