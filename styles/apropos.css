@@ -199,6 +199,7 @@ header h1 {
 
 /* Bouton Burger */
 .burger-menu {
+  position: fixed;
   font-size: 50px;
   color: #fff;
   background: none;
@@ -214,12 +215,12 @@ header h1 {
  .close-menu {
   position: fixed;
   top: 20px;
-  right: 15px;
+  right: 10px;
   background: none;
   border: none;
   font-size: 40px;
   cursor: pointer;
-  color: white;
+  color: red;
 }
 
 /* Masquer le bouton de fermeture au début */

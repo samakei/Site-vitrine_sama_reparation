@@ -94,7 +94,7 @@ header h1 {
   border: none;
   font-size: 40px;
   cursor: pointer;
-  color: white;
+  color: red;
 }
 
 /* Masquer le bouton de fermeture au début */
