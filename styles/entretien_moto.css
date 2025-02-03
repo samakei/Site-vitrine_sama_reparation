@@ -35,7 +35,7 @@ header h1 {
   margin-right: auto;
   max-width: 25%;
   height: 100%;
-  padding: 15px 0px 0px 20px;
+  padding: 15px 0px 0px 0px;
 
 }
 .logo img {
@@ -85,6 +85,28 @@ header h1 {
 .burger-menu:focus {
   outline: none;
 }
+/* Styles par défaut */
+ .close-menu {
+  position: fixed;
+  top: 20px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Masquer le bouton de fermeture au début */
+.close-menu {
+  display: none;
+}
+
+/* Menu ouvert */
+.nav-bar.active {
+  right: 0;
+}
+
 
 /* Mobile : Masquer le menu */
 @media (max-width: 768px) {
@@ -115,6 +137,7 @@ header h1 {
     right: 0;
     padding: 10px 25px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
   }
 
   .nav-bar.active {
@@ -122,7 +145,7 @@ header h1 {
   }
 
   .nav-bar a {
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-bottom: 1px solid #333;
     margin: 5px;
   }
