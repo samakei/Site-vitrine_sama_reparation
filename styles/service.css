@@ -78,6 +78,7 @@ header h1 {
   background: none;
   right: 0;
   border: none;
+  right: 0;
   cursor: pointer;
   display: none; /* Caché sur les grands écrans */
 }

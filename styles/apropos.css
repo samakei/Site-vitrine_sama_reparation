@@ -204,6 +204,7 @@ header h1 {
   color: #fff;
   background: none;
   border: none;
+  right: 0;
   cursor: pointer;
   display: none; /* Caché sur les grands écrans */
 }
