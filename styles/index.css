@@ -322,7 +322,7 @@ footer {
 .slide {
     width: 100%;
     height: auto;
-    background: url('/assets/slideshow/slide1.jpg') center/cover;
+    background: url('/assets/slideshow/slide1.webp') center/cover;
    object-fit: cover;
 }
 
