@@ -171,13 +171,6 @@ header h1 {
    
 }
 
-
-.post a:hover {
-    color: #ffcc00; /* Une couleur plus visible au survol */
-    font-weight: bold;
-}
-
-
 /*
 .post a {
     color: #f0a500;
