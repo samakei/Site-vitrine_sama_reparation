@@ -1,14 +1,14 @@
 // Déclaration des slides
 const slides = [
-  { image: "/assets/slideshow/slide1.jpg", tagLine: "Atelier équipé" },
-  { image: "/assets/slideshow/slide2.jpg", tagLine: "Local professionnel" },
-  { image: "/assets/slideshow/slide3.jpg", tagLine: "Réparations rapides" },
-  { image: "/assets/slideshow/slide4.jpg", tagLine: "Entretien expert" },
-  { image: "/assets/slideshow/slide5.jpg", tagLine: "Motos personnalisées" },
-  { image: "/assets/slideshow/slide6.jpg", tagLine: "Passion & performance" },
-  { image: "/assets/slideshow/slide7.jpg", tagLine: "SAMA Réparation" },
-  { image: "/assets/slideshow/slide8.jpg", tagLine: "Votre satisfaction, notre priorité" },
-  { image: "/assets/slideshow/slide9.jpg", tagLine: "Vente d'essences" },
+  { image: "/assets/slideshow/slide1.webp", tagLine: "Atelier équipé" },
+  { image: "/assets/slideshow/slide2.webp", tagLine: "Local professionnel" },
+  { image: "/assets/slideshow/slide3.webp", tagLine: "Réparations rapides" },
+  { image: "/assets/slideshow/slide4.webp", tagLine: "Entretien expert" },
+  { image: "/assets/slideshow/slide5.webp", tagLine: "Motos personnalisées" },
+  { image: "/assets/slideshow/slide6.webp", tagLine: "Passion & performance" },
+  { image: "/assets/slideshow/slide7.webp", tagLine: "SAMA Réparation" },
+  { image: "/assets/slideshow/slide8.webp", tagLine: "Votre satisfaction, notre priorité" },
+  { image: "/assets/slideshow/slide9.webp", tagLine: "Vente d'essences" },
 ];
 
 // Sélection du carrousel
