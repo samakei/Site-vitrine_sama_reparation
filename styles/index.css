@@ -166,11 +166,12 @@ header h1 {
     color: #222;
 }
 .post a {
-    color: #d68600;
+     color: #c27900;
     text-decoration: underline; /* Règle WCAG pour garantir l'accessibilité */
    
 }
 .post a:hover{
+  color: #ffcc00;
   font-weight: bold;
 }
 
