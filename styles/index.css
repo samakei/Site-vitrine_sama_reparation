@@ -538,6 +538,8 @@ footer {
 
     .service-card img {
         height: 160px;
+        object-fit: cover;
+        background-repeat: no-repeat;
     }
 
     .service-card h3 {
@@ -547,4 +549,4 @@ footer {
     .service-card p {
         font-size: 0.85rem;
     }
-}
+  }
