@@ -39,6 +39,7 @@ header h1 {
 
 }
 .logo img {
+  width: auto;
     width: 90px;
     border-radius: 60px 60px 10px 10px;
   }

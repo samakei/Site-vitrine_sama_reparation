@@ -15,12 +15,13 @@ body {
 
 .logo {
   margin-right: auto;
-  width: 25%;
+  max-width: 25%;
   height: 100%;
   padding: 15px 0px 0px 0px;
 
 }
 .logo img {
+   width: auto;
     height: 90px;
     border-radius: 60px 60px 10px 10px;
     margin-bottom: 20px;
