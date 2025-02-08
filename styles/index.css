@@ -166,20 +166,15 @@ header h1 {
     color: #222;
 }
 .post a {
-     color: #c27900;
+     color: #f0a500;
     text-decoration: underline; /* Règle WCAG pour garantir l'accessibilité */
    
-}
+  }
 .post a:hover{
   color: #ffcc00;
   font-weight: bold;
 }
 
-/*
-.post a {
-    color: #f0a500;
-    text-decoration: none;
-}
 
 /*lire plus */
 .hidden-content {
