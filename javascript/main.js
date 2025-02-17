@@ -14,7 +14,7 @@ const slides = [
 // Sélection du carrousel
 const carrousel = document.querySelector("#carrousels");
 if (!carrousel) {
-  console.error("⚠️ ERREUR : Élément #carrousels introuvable !");
+  console.error(" ERREUR : Élément #carrousels introuvable !");
 }
 
 // Création des éléments dynamiques
@@ -89,7 +89,7 @@ setInterval(() => {
   updateSlide(currentIndex);
 }, 5000);
 
-// Déclaration lire plus
+// Déclaration de lire plus utilisation prevu pour plus tard
 /*
 document.querySelector(".toggle-btn").addEventListener("click", function() {
     const content = document.querySelector(".hidden-content");
