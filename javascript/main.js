@@ -4,7 +4,7 @@ const slides = [
   { image: "/assets/slideshow/slide2.webp", tagLine: "Local professionnel." },
   { image: "/assets/slideshow/slide3.webp", tagLine: "Réparations rapides." },
   { image: "/assets/slideshow/slide4.webp", tagLine: "Entretien expert." },
-  { image: "/assets/slideshow/slide5.webp", tagLine: "Vente des Motos neuf, et motos occasion." },
+  { image: "/assets/slideshow/slide5.webp", tagLine: "Venté des Motos neuf, et motos occasion." },
   { image: "/assets/slideshow/slide6.webp", tagLine: "Passion & performance." },
   { image: "/assets/slideshow/slide7.webp", tagLine: "SAMA Réparation." },
   { image: "/assets/slideshow/slide8.webp", tagLine: "Service après-vente, votre satisfaction est notre priorité." },
