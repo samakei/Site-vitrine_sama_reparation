@@ -1,178 +1,218 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAMA reparation, reparateur professionnelle de motos à Sanankoroba</title>
-   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <meta name="description" content="Site web de Sama Réparation, Réparateur professionnelle proposant des services de Réparations mécaniques, Moteur, suspensions, freins,Vidanges, réglages et contrôle général.">
-    <link rel="stylesheet" href="./styles/index.min.css" media="all">
-   <script src="./javascript/main.js" async></script> 
-    <script src="./javascript/menu_mobile.js" async></script>
-    
-    
-     <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="SAMA Reparation">
-  <meta property="og:description" content="Site web de Sama Reparation, reparateur professionnelle de motos proposant des services de Réparations mécaniques, Moteur, suspensions, freins, Vidanges, réglages et contrôle général.">
-  <meta property="og:image" content="https://sama-reparation.netlify.app/assets/image/moussa.webp">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAMA Réparation moto à Sanankoroba</title>
+  <meta name="description" content="SAMA Réparation assure la réparation, l'entretien, la vidange, les pneus, les pièces et les accessoires moto à Sanankoroba.">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="preload" href="./assets/slideshow/slide1.webp" as="image">
+  <link rel="stylesheet" href="./styles/site.css" media="all">
+  <script src="./javascript/menu_mobile.js" defer></script>
+  <script src="./javascript/main.js" defer></script>
+
+  <meta property="og:title" content="SAMA Réparation">
+  <meta property="og:description" content="Atelier de réparation, entretien, pièces et accessoires moto à Sanankoroba.">
+  <meta property="og:image" content="https://sama-reparation.netlify.app/assets/image/moussa.jpg">
   <meta property="og:url" content="https://sama-reparation.netlify.app/">
   <meta property="og:type" content="website">
-<!--l'image à afficher avec votre page lorsqu'elle est partagée sur Facebook.-->
 
-	<!-- Autres balises meta -->
-  
-	<!-- Insérer le code JSON-LD-->
-	<script type="application/ld+json" >
-		{
-        "@context": "http://schema.org",
-        "@type": "LocalBusiness",
-        "name": "SAMA reparation",
-        "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "93R7+92C,RN7Mali, Sanankoro, Mali",
-        "addressLocality": "Sanankoroba",
-        "postalCode": "93R7+92 Sanankoro, Mali"
-     },
-
-     "telephone": " +223 74 29 50 77",
-	 "email": "moussazoumana93@gmail.com",
-
-       "openingHoursSpecification": [
+  <script type="application/ld+json">
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "7:00",
-      "closes": "18:00"
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SAMA Réparation",
+      "image": "https://sama-reparation.netlify.app/assets/image/moussa.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "93R7+92C, RN7 Mali",
+        "addressLocality": "Sanankoroba",
+        "addressCountry": "ML"
+      },
+      "telephone": "+22374295077",
+      "email": "moussazoumana93@gmail.com",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "07:00",
+          "closes": "18:00"
+        }
+      ]
     }
-  ]
-}
-</script>
- 
+  </script>
 </head>
 <body>
-
-    <!-- HEADER -->
-    <header class="header">
-    <div class="logo">
-    <img src="./assets/image/Logo.webp" alt="image de logo">
-  </div>
- <!-- <button type="button" class="burger-menu">☰</button> -->
-  <button type="button" id="menu-toggle" class="burger-menu">☰</button>
-<button type="button" id="close-menu" class="close-menu">✖</button>
-  <nav id="menu" class="nav-bar">
-    <a href="/index.html">Accueil</a>
-    <a href="/service.html">Services</a>
-    <a href="/apropos.html">À propos</a>
-    <a href="#contact">Contact</a>
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="SAMA Réparation - Accueil">
+      <img src="./assets/image/Logo.webp" alt="Logo SAMA Réparation">
+      <span>SAMA <strong>Réparation</strong></span>
+    </a>
+    <button type="button" id="menu-toggle" class="menu-toggle" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+      Menu
+    </button>
+    <nav id="menu" class="nav-bar" aria-label="Navigation principale">
+      <a href="./index.html" aria-current="page">Accueil</a>
+      <a href="./service.html">Services</a>
+      <a href="./apropos.html">À propos</a>
+      <a href="#contact">Contact</a>
     </nav>
-       
-    </header>
+  </header>
 
-    <!-- CARROUSEL -->
-    <div id="carrousels" class="carrousel">
-        <div class="slides">
-            <div class="slide active"></div>  
+  <main>
+    <section class="hero hero-home">
+      <div class="section-inner hero-content">
+        <p class="eyebrow">Atelier moto à Sanankoroba</p>
+        <h1>Réparation, entretien et pièces pour votre moto.</h1>
+        <p>Diagnostic rapide, interventions soignées et conseils clairs pour les motos Haojin, Djakarta, Apsonic et autres marques courantes.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="tel:+22374295077">Appeler l'atelier</a>
+          <a class="button secondary" href="./service.html">Voir les services</a>
         </div>
-    </div>
-
-    <!-- SECTION BIENVENUE -->
-    <section class="welcome">
-        <h1>Bienvenue chez SAMA Réparation</h1>
-        <p>Votre spécialiste en réparation et entretien de motos HaouDjuin et Djakarta.</p>
+      </div>
     </section>
 
-    <!-- ARTICLES RÉCENTS -->
-    <section id="lastPosts" class="recent-posts">
-        <h2>Nos dernières actualités</h2>
-        <div class="posts-container">
-
-             <article class="post"> 
-                <h3>Entretien Moto : Nos conseils</h3>
-                <p>Découvrez nos recommandations pour prolonger la durée de vie de votre moto.</p>
-                 <a href="./entretien-moto.html">Lire plus</a> 
-            </article>
-       
-            <article class="post">
-                <h3>Réparations rapides et efficaces</h3>
-                <p>Nos experts vous garantissent une prise en charge rapide et fiable.</p>
-               <a  href="./service.html">Lire plus</a> 
-            </article>
+    <section class="trust-strip" aria-label="Points forts de l'atelier">
+      <div class="section-inner stats-grid">
+        <div>
+          <strong>7h - 18h</strong>
+          <span>Du lundi au samedi</span>
         </div>
-    </section>  
-    <section class="services">
-    <h2>Nos Services et Produits</h2>
-    <div class="services-container">
-        <div class="service-card">
-            <img src="/assets/image/reparation-moto.webp" alt="image Réparation Moto">
-            <h3>Réparation Moto</h3>
-            <p>Confiez-nous votre moto pour un diagnostic et une réparation rapide.</p>
+        <div>
+          <strong>Pièces & accessoires</strong>
+          <span>Pneus, bougies, casques, huiles</span>
         </div>
-        <div class="service-card">
-            <img src="/assets/image/vidange-huile.webp" alt="image Changement d'huile moteur">
-            <h3>Changement d'huile</h3>
-            <p>Vidange et lubrification pour optimiser la performance du moteur.</p>
+        <div>
+          <strong>Sanankoroba</strong>
+          <span>93R7+92C, RN7 Mali</span>
         </div>
-        <div class="service-card">
-            <img src="/assets/image/graissage-chaine.webp" alt="image Graissage de la chaîne">
-            <h3>Graissage de chaîne</h3>
-            <p>Un entretien régulier pour éviter l'usure et assurer la longévité.</p>
-        </div>
-        <div class="service-card">
-            <img src="/assets/image/changement-pneu.webp" alt="image Changement de pneu">
-            <h3>Changement de pneu</h3>
-            <p>Des pneus adaptés pour une adhérence et une sécurité optimales.</p>
-        </div>
-        <div class="service-card">
-            <img src="/assets/image/vente-bougies.webp" alt="image Vente de bougies">
-            <h3>Vente de bougies</h3>
-            <p>Des bougies de qualité pour une meilleure combustion et performance moteur.</p>
-        </div>
-        <div class="service-card">
-            <img src="/assets/image/casques-protection.webp" alt="image Casques de protection">
-            <h3>Casques de protection</h3>
-            <p>Protégez-vous avec nos casques de qualité, adaptés à tous les motards.</p>
-        </div>
-    </div>
-</section>
-<section class="testimonials-container">
-    <h2>Carte Google Maps</h2>
-
- 
- <iframe  
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3896.8803415182424!2d-7.940026324482026!3d12.39094232734186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe51dd675d695425%3A0x666616a123a8d63a!2sSAMA-R%C3%A9paration-Moto!5e0!3m2!1sfr!2sfr!4v1739128110460!5m2!1sfr!2sfr"
-  title="Carte Google Maps"
-  referrerpolicy="strict-origin-when-cross-origin"
- [loading="lazy"]
-></iframe> 
-<noscript>
-  <a href="https://maps.app.goo.gl/Y2fGUpAJv8aEwJZK8">Voir la page</a>
-  
-</noscript>
- 
-   </section>
-  
-    <!-- SECTION CONTACT -->
-    <section id="contact" class="contact">
-        <h2>Contactez-nous</h2>
-        <p>Besoin de conseils ou d’un devis ? Passez nous voir ou appelez-nous dès aujourd’hui !</p>
-        <p><strong>Téléphone :</strong> +223 74 29 50 77</p>
-        <p><strong>Email :</strong> moussazoumana93@gmail.com</p>
-        <p><strong>Adresse :</strong> 93R7+92C,RN7Mali, Sanankoroba, Mali</p>
-        <p><strong>Horaires :</strong> Lundi - Samedi | 7h00 - 18h00</p>
+      </div>
     </section>
-   
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2025 SAMA Réparation. Tous droits réservés.</p>
-    </footer>
 
+    <section class="section">
+      <div class="section-inner section-heading">
+        <p class="eyebrow">Nos interventions</p>
+        <h2>Services et produits essentiels</h2>
+      </div>
+      <div class="section-inner services-grid">
+        <article class="service-card">
+          <img src="./assets/image/reparation-moto.webp" alt="Moto en réparation dans l'atelier" loading="lazy">
+          <div>
+            <h3>Réparation moto</h3>
+            <p>Diagnostic, moteur, freins, suspensions et remise en route.</p>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="./assets/image/vidange-huile.webp" alt="Vidange d'huile moteur" loading="lazy">
+          <div>
+            <h3>Vidange moteur</h3>
+            <p>Huile adaptée, lubrification et contrôle général.</p>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="./assets/image/graissage-chaine.webp" alt="Graissage d'une chaîne de moto" loading="lazy">
+          <div>
+            <h3>Transmission</h3>
+            <p>Nettoyage, graissage et réglage de chaîne.</p>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="./assets/image/changement-pneu.webp" alt="Changement de pneu moto" loading="lazy">
+          <div>
+            <h3>Pneus et sécurité</h3>
+            <p>Remplacement, pression, adhérence et vérification de l'usure.</p>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="./assets/image/vente-bougies.webp" alt="Bougies moto en vente" loading="lazy">
+          <div>
+            <h3>Bougies et pièces</h3>
+            <p>Pièces utiles pour une combustion propre et un démarrage fiable.</p>
+          </div>
+        </article>
+        <article class="service-card">
+          <img src="./assets/image/casques-protection.webp" alt="Casques de protection moto" loading="lazy">
+          <div>
+            <h3>Accessoires</h3>
+            <p>Casques, protections et équipements pratiques pour rouler mieux.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="section-inner split-band">
+        <div>
+          <p class="eyebrow">A l'atelier</p>
+          <h2>Des réparations rapides, avec un suivi simple.</h2>
+          <p>Vous expliquez le problème, nous contrôlons les points importants, puis nous proposons l'intervention adaptée avant de commencer.</p>
+          <a class="button light" href="./entretien-moto.html">Lire les conseils d'entretien</a>
+        </div>
+      <div id="carrousels" class="showcase-carousel" aria-label="Photos de l'atelier SAMA Réparation"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner article-grid">
+        <article class="post-card">
+          <p class="eyebrow">Conseils</p>
+          <h3>Entretien moto : les contrôles à ne pas oublier</h3>
+          <p>Vidange, freins, pneus, chaîne et batterie : les bons gestes pour prolonger la durée de vie de votre moto.</p>
+          <a href="./entretien-moto.html">Lire les conseils</a>
+        </article>
+        <article class="post-card">
+          <p class="eyebrow">Services</p>
+          <h3>Réparations mécaniques et pièces courantes</h3>
+          <p>Moteur, suspensions, freins, pneus, bougies et accessoires disponibles selon vos besoins.</p>
+          <a href="./service.html">Voir les services</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section map-section" aria-labelledby="map-title">
+      <div class="section-inner section-heading">
+        <p class="eyebrow">Adresse</p>
+        <h2 id="map-title">Retrouvez SAMA Réparation</h2>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3896.8803415182424!2d-7.940026324482026!3d12.39094232734186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe51dd675d695425%3A0x666616a123a8d63a!2sSAMA-R%C3%A9paration-Moto!5e0!3m2!1sfr!2sfr!4v1739128110460!5m2!1sfr!2sfr"
+          title="Carte Google Maps de SAMA Réparation"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+        <noscript>
+          <a href="https://maps.app.goo.gl/Y2fGUpAJv8aEwJZK8">Voir la page Google Maps</a>
+        </noscript>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-band">
+      <div class="section-inner contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Besoin d'un devis ou d'un conseil ?</h2>
+          <p>Passez à l'atelier ou appelez-nous avant votre visite.</p>
+        </div>
+        <address>
+          <a href="tel:+22374295077">+223 74 29 50 77</a>
+          <a href="mailto:moussazoumana93@gmail.com">moussazoumana93@gmail.com</a>
+          <span>93R7+92C, RN7 Mali, Sanankoroba</span>
+          <span>Lundi - Samedi | 7h00 - 18h00</span>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 SAMA Réparation. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
-
-

@@ -1,25 +1,28 @@
-// Gestion du bouton menu-burger
-const burgerMenu = document.querySelector(".burger-menu");
-const navBar = document.querySelector(".nav-bar");
-
-burgerMenu.addEventListener("click", () => {
-  navBar.classList.toggle("active"); // Ajoute ou enlève la classe 'active'
-});
-
-
-//JavaScript pour gérer l’ouverture/fermeture de menu
 const menuToggle = document.getElementById("menu-toggle");
-const closeMenu = document.getElementById("close-menu");
 const menu = document.getElementById("menu");
 
-menuToggle.addEventListener("click", () => {
-  menu.classList.add("active");
-  menuToggle.style.display = "none";
-  closeMenu.style.display = "block";
-});
+if (menuToggle && menu) {
+  const setMenuState = (isOpen) => {
+    menu.classList.toggle("is-open", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.textContent = isOpen ? "Fermer" : "Menu";
+    menuToggle.setAttribute(
+      "aria-label",
+      isOpen ? "Fermer le menu" : "Ouvrir le menu"
+    );
+  };
 
-closeMenu.addEventListener("click", () => {
-  menu.classList.remove("active");
-  menuToggle.style.display = "block";
-  closeMenu.style.display = "none";
-});
+  menuToggle.addEventListener("click", () => {
+    setMenuState(!menu.classList.contains("is-open"));
+  });
+
+  menu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setMenuState(false));
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setMenuState(false);
+    }
+  });
+}

@@ -1,113 +1,118 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entretien Moto & Nos Conseils</title>
-    <meta name="description" content="Site web de Sama Réparation, Réparateur professionnelle proposant des services de Réparations mécaniques, Moteur, suspensions, freins,Vidanges, réglages et contrôle général.">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/entretien_moto.min.css"  media="all">
-    <script src="./javascript/menu_mobile.js" async></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entretien moto | Conseils SAMA Réparation</title>
+  <meta name="description" content="Conseils d'entretien moto : vidange, freins, pneus, chaîne, batterie, éclairage et contrôles avant trajet.">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/site.css" media="all">
+  <script src="./javascript/menu_mobile.js" defer></script>
 
-    <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="SAMA Reparation">
-  <meta property="og:description" content="Site web de Sama Reparation, reparateur professionnelle de motos proposant des services de Réparations mécaniques, Moteur, suspensions, freins, Vidanges, réglages et contrôle général.">
-  <meta property="og:image" content="https://sama-reparation.netlify.app/assets/image/moussa.webp">
-  <meta property="og:url" content="https://sama-reparation.netlify.app/">
-  <meta property="og:type" content="website">
-<!--l'image à afficher avec votre page lorsqu'elle est partagée sur Facebook.-->
-
-	<!-- Autres balises meta -->
-  
-	<!-- Insérer le code JSON-LD-->
-	<script type="application/ld+json" >
-		{
-        "@context": "http://schema.org",
-        "@type": "LocalBusiness",
-        "name": "SAMA reparation",
-        "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "93R7+92C,RN7Mali, Sanankoro, Mali",
-        "addressLocality": "Sanankoroba",
-        "postalCode": "93R7+92 Sanankoro, Mali"
-     },
-
-     "telephone": " +223 74 29 50 77",
-	 "email": "moussazoumana93@gmail.com",
-
-       "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "7:00",
-      "closes": "18:00"
-    }
-  ]
-}
-</script>
+  <meta property="og:title" content="Entretien moto | SAMA Réparation">
+  <meta property="og:description" content="Les contrôles essentiels pour prolonger la durée de vie de votre moto.">
+  <meta property="og:image" content="https://sama-reparation.netlify.app/assets/image/moussa.jpg">
+  <meta property="og:url" content="https://sama-reparation.netlify.app/entretien-moto.html">
+  <meta property="og:type" content="article">
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="SAMA Réparation - Accueil">
+      <img src="./assets/image/Logo.webp" alt="Logo SAMA Réparation">
+      <span>SAMA <strong>Réparation</strong></span>
+    </a>
+    <button type="button" id="menu-toggle" class="menu-toggle" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+      Menu
+    </button>
+    <nav id="menu" class="nav-bar" aria-label="Navigation principale">
+      <a href="./index.html">Accueil</a>
+      <a href="./service.html">Services</a>
+      <a href="./apropos.html">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <header class="header">
-        <div class="logo">
-    <img src="./assets/image/Logo.webp" alt="image de logo">
-  </div>
- <button type="button" id="menu-toggle" class="burger-menu">☰</button>
-<button type="button" id="close-menu" class="close-menu">✖</button>
-  <div id="menu" class="nav-bar">
-    <a href="/index.html">Accueil</a>
-    <a href="/service.html">Services</a>
-    <a href="/apropos.html">À propos</a>
-    <a href="#">Contact</a>
-    </div>
-      
-</header>
-  
-    <main class="content">
-        <h1>Entretien Moto & Nos Conseils 🏍️🔧</h1>
-        <section class="entretien">
-            <p>Votre moto est bien plus qu’un simple moyen de transport : c’est une passion, une liberté, une extension de vous-même. Pour assurer sa longévité et garantir votre sécurité sur la route, un entretien régulier est essentiel.</p>
-
-            <h2>✅ Entretien Essentiel :</h2>
-            <ul>
-                <li><strong>🔹 Vidange et lubrification :</strong> Remplacez l’huile moteur selon les recommandations du constructeur pour éviter l’usure prématurée.</li>
-                <li><strong>🔹 Freins :</strong> Vérifiez régulièrement l’état des plaquettes et des disques pour un freinage optimal.</li>
-                <li><strong>🔹 Pneus :</strong> Surveillez la pression et l’usure pour une adhérence parfaite sur la route.</li>
-                <li><strong>🔹 Chaîne et transmission :</strong> Nettoyez et graissez la chaîne pour éviter l’usure excessive.</li>
-                <li><strong>🔹 Batterie et éclairage :</strong> Assurez-vous que votre moto démarre toujours au quart de tour et que vos feux fonctionnent correctement.</li>
-            </ul>
-
-            <h2>💡 Nos Conseils pour une Moto au Top :</h2>
-            <ul>
-                <li>✔️ <strong>Un contrôle avant chaque trajet :</strong> Vérifiez vos freins, pneus et phares avant de prendre la route.</li>
-                <li>✔️ <strong>Un nettoyage régulier :</strong> Garder sa moto propre permet de repérer d’éventuels problèmes plus rapidement.</li>
-                <li>✔️ <strong>Un stockage optimal :</strong> Si vous n’utilisez pas votre moto pendant une longue période, stockez-la dans un endroit sec et chargez la batterie de temps en temps.</li>
-                <li>✔️ <strong>Une conduite adaptée :</strong> Évitez les accélérations brutales et les freinages excessifs pour préserver les composants mécaniques.</li>
-            </ul>
-
-            <p class="cta">🚀 Besoin d’un entretien ou d’une réparation ? Confiez votre moto à <strong>SAMA Réparation</strong>, votre expert en entretien et réparation moto ! 🛠️🔥</p>
-        </section>
-        
-    </main>
-    <!-- SECTION CONTACT -->
-    <section id="contact" class="contact">
-        <h2>Contactez-nous</h2>
-        <p>Besoin de conseils ou d’un devis ? Passez nous voir ou appelez-nous dès aujourd’hui !</p>
-        <p><strong>Téléphone :</strong> +223 74 29 50 77</p>
-        <p><strong>Email :</strong> moussazoumana93@gmail.com</p>
-        <p><strong>Adresse :</strong> 93R7+92C,RN7Mali, Sanankoro, Mali</p>
-        <p><strong>Horaires :</strong> Lundi - Samedi | 7h00 - 18h00</p>
+  <main>
+    <section class="hero page-hero advice-hero">
+      <div class="section-inner hero-content">
+        <p class="eyebrow">Conseils d'entretien</p>
+        <h1>Les contrôles qui prolongent la vie de votre moto.</h1>
+        <p>Une moto bien entretenue démarre mieux, freine mieux et coûte moins cher à réparer.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="tel:+22374295077">Appeler pour un contrôle</a>
+          <a class="button secondary" href="./service.html">Voir les services</a>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 SAMA Réparation - Tous droits réservés.</p>
-    </footer>
+    <article class="section article-section">
+      <div class="section-inner article-layout">
+        <div class="article-intro">
+          <p class="eyebrow">Routine simple</p>
+          <h2>Avant la panne, quelques gestes font la différence.</h2>
+          <p>Votre moto est un outil de travail, de trajet et de liberté. Un entretien régulier évite l'usure prématurée et garde votre conduite plus sûre.</p>
+        </div>
 
+        <div class="check-list">
+          <section>
+            <h3>Vidange et lubrification</h3>
+            <p>Remplacez l'huile moteur selon l'usage et contrôlez les niveaux pour protéger le moteur.</p>
+          </section>
+          <section>
+            <h3>Freins</h3>
+            <p>Vérifiez les plaquettes, les disques et la réponse du levier avant chaque trajet important.</p>
+          </section>
+          <section>
+            <h3>Pneus</h3>
+            <p>Surveillez la pression, les coupures et l'usure pour garder une bonne adhérence.</p>
+          </section>
+          <section>
+            <h3>Chaîne et transmission</h3>
+            <p>Nettoyez, graissez et réglez la chaîne pour éviter les à-coups et l'usure rapide.</p>
+          </section>
+          <section>
+            <h3>Batterie et éclairage</h3>
+            <p>Contrôlez le démarrage, les phares, les clignotants et le feu stop.</p>
+          </section>
+          <section>
+            <h3>Conduite et stockage</h3>
+            <p>Évitez les accélérations brutales, nettoyez régulièrement la moto et gardez-la au sec.</p>
+          </section>
+        </div>
+      </div>
+    </article>
+
+    <section class="section section-soft">
+      <div class="section-inner split-feature">
+        <img src="./assets/image/graissage-chaine.webp" alt="Entretien de chaîne moto" loading="lazy">
+        <div>
+          <p class="eyebrow">Contrôle rapide</p>
+          <h2>Un doute sur un bruit, un frein ou un démarrage ?</h2>
+          <p>Passez à l'atelier pour un avis avant que le problème devienne plus cher.</p>
+          <a class="button primary" href="#contact">Contacter l'atelier</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-band">
+      <div class="section-inner contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Planifier un entretien</h2>
+          <p>Appelez-nous ou passez avec votre moto pendant les horaires d'ouverture.</p>
+        </div>
+        <address>
+          <a href="tel:+22374295077">+223 74 29 50 77</a>
+          <a href="mailto:moussazoumana93@gmail.com">moussazoumana93@gmail.com</a>
+          <span>93R7+92C, RN7 Mali, Sanankoroba</span>
+          <span>Lundi - Samedi | 7h00 - 18h00</span>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 SAMA Réparation. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>

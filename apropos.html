@@ -1,103 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAMA reparation, reparateur professionnelle de motos à Sanankoroba</title>
-    <meta name="description" content="Site web de Sama Réparation, Réparateur professionnelle proposant des services de Réparations mécaniques, Moteur, suspensions, freins,Vidanges, réglages et contrôle général.">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/apropos.min.css" media="all">
-    <script src="./javascript/menu_mobile.js" async></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos | SAMA Réparation</title>
+  <meta name="description" content="Découvrez SAMA Réparation, atelier moto à Sanankoroba spécialisé dans l'entretien, la réparation, les pièces et les accessoires.">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/site.css" media="all">
+  <script src="./javascript/menu_mobile.js" defer></script>
 
-    <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="SAMA Reparation">
-  <meta property="og:description" content="Site web de Sama Reparation, reparateur professionnelle de motos proposant des services de Réparations mécaniques, Moteur, suspensions, freins, Vidanges, réglages et contrôle général.">
-  <meta property="og:image" content="https://sama-reparation.netlify.app/assets/image/moussa.webp">
-  <meta property="og:url" content="https://sama-reparation.netlify.app/">
+  <meta property="og:title" content="À propos | SAMA Réparation">
+  <meta property="og:description" content="Un atelier moto à Sanankoroba pour entretenir, réparer et conseiller les motards.">
+  <meta property="og:image" content="https://sama-reparation.netlify.app/assets/image/moussa.jpg">
+  <meta property="og:url" content="https://sama-reparation.netlify.app/apropos.html">
   <meta property="og:type" content="website">
-<!--l'image à afficher avec votre page lorsqu'elle est partagée sur Facebook.-->
-
-	<!-- Autres balises meta -->
-  
-	<!-- Insérer le code JSON-LD-->
-	<script type="application/ld+json" >
-		{
-        "@context": "http://schema.org",
-        "@type": "LocalBusiness",
-        "name": "SAMA reparation",
-        "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "93R7+92C,RN7Mali, Sanankoro, Mali",
-        "addressLocality": "Sanankoroba",
-        "postalCode": "93R7+92 Sanankoro, Mali"
-     },
-
-     "telephone": " +223 74 29 50 77",
-	 "email": "moussazoumana93@gmail.com",
-
-       "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "7:00",
-      "closes": "18:00"
-    }
-  ]
-}
-</script>
 </head>
-<header class="header">
-    
-  <div class="logo">
-    <img src="./assets/image/Logo.webp" alt="image de logo">
-  </div>
- <button type="button" id="menu-toggle" class="burger-menu">☰</button>
-<button type="button" id="close-menu" class="close-menu">✖</button>
-  <nav id="menu" class="nav-bar">
-    <a href="/index.html">Accueil</a>
-    <a href="/service.html">Services</a>
-    <a href="/apropos.html">À propos</a>
-    <a href="#contact">Contact</a>
-    </nav>
-</header>
-
 <body>
- <section class="about">
-    <h1>À propos de nous</h1>
-    <p>Bienvenue chez <strong>SAMA Reparation</strong>, votre atelier de réparation et d'entretien spécialisé pour motos HaouDjuin et autres marques emblématiques. Passionnés par la mécanique et les deux-roues, nous mettons notre expertise au service des motards qui veulent le meilleur pour leur machine.</p>
-    
-    <p><strong>Votre moto mérite l’excellence.</strong><br>
-    Chez SAMA Reparation, nous donnons vie à votre passion avec des services sur mesure pour entretenir, réparer et personnaliser vos deux-roues.</p>
-    
-    <p><strong>Passion, performance, perfection.</strong><br>
-    C’est la promesse que nous faisons à chaque motard qui confie sa machine à notre atelier.</p>
-    
-    <p><strong>Un atelier conçu par des motards, pour des motards.</strong><br>
-    Parce que nous partageons votre passion, nous savons exactement ce qu’il faut pour que votre moto roule comme un rêve.</p>
-    
-    <p><strong>Offrez à votre moto le soin qu’elle mérite.</strong><br>
-    À SAMA Reparation, nous combinons savoir-faire et passion pour entretenir et réparer vos motos HaouDjuin avec le plus grand soin.</p>
-</section>
- 
-   <section id="contact" class="contact">
-      <h2>Contactez-nous</h2>
-      <p>
-        Besoin de conseils ou d’un devis ? Passez nous voir ou appelez-nous dès
-        aujourd’hui !
-      </p>
-      <p><strong>Téléphone :</strong> +223 74 29 50 77</p>
-      <p><strong>Email :</strong> moussazoumana93@gmail.com</p>
-      <p><strong>Situé :</strong> à 93R7+92C,RN7Mali, Sanankoro, Mali</p>
-      <p><strong>Ouverture :</strong> Du Lundi au Samedi 7h00 à 18h00</p>
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="SAMA Réparation - Accueil">
+      <img src="./assets/image/Logo.webp" alt="Logo SAMA Réparation">
+      <span>SAMA <strong>Réparation</strong></span>
+    </a>
+    <button type="button" id="menu-toggle" class="menu-toggle" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+      Menu
+    </button>
+    <nav id="menu" class="nav-bar" aria-label="Navigation principale">
+      <a href="./index.html">Accueil</a>
+      <a href="./service.html">Services</a>
+      <a href="./apropos.html" aria-current="page">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero page-hero about-hero">
+      <div class="section-inner hero-content">
+        <p class="eyebrow">À propos de l'atelier</p>
+        <h1>Un atelier moto proche des conducteurs de Sanankoroba.</h1>
+        <p>Nous entretenons, réparons et conseillons les motards avec une approche simple : écouter, contrôler, expliquer, puis intervenir.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="tel:+22374295077">Appeler SAMA Réparation</a>
+          <a class="button secondary" href="./service.html">Nos services</a>
+        </div>
+      </div>
     </section>
-   <footer>
-    <p>&copy; 2025 SAMA Reparation. Tous droits réservés.</p>
-</footer>
+
+    <section class="section">
+      <div class="section-inner story-grid">
+        <div>
+          <p class="eyebrow">Notre travail</p>
+          <h2>Réparer avec soin, expliquer sans compliquer.</h2>
+          <p>SAMA Réparation accompagne les conducteurs de motos Haojin, Djakarta, Apsonic et autres marques courantes. L'objectif est de garder votre moto fiable pour le travail, les déplacements et les trajets du quotidien.</p>
+          <p>Chaque intervention commence par un contrôle clair. Vous savez ce qui doit être fait, pourquoi c'est utile et comment entretenir votre moto ensuite.</p>
+        </div>
+        <img src="./assets/image/moussa.jpg" alt="SAMA Réparation à l'atelier" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="section-inner section-heading">
+        <p class="eyebrow">Nos engagements</p>
+        <h2>Ce qui guide chaque intervention</h2>
+      </div>
+      <div class="section-inner feature-grid">
+        <article class="feature-card">
+          <h3>Diagnostic clair</h3>
+          <p>Identifier le problème avant de remplacer une pièce.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Conseil utile</h3>
+          <p>Expliquer les gestes d'entretien adaptés à votre moto.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Sécurité</h3>
+          <p>Contrôler les freins, pneus, chaîne et éclairage avec attention.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Pièces pratiques</h3>
+          <p>Proposer les pièces et accessoires essentiels pour rouler mieux.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-band">
+      <div class="section-inner contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Passer à l'atelier</h2>
+          <p>Nous vous accueillons du lundi au samedi pour les réparations, les contrôles et les conseils.</p>
+        </div>
+        <address>
+          <a href="tel:+22374295077">+223 74 29 50 77</a>
+          <a href="mailto:moussazoumana93@gmail.com">moussazoumana93@gmail.com</a>
+          <span>93R7+92C, RN7 Mali, Sanankoroba</span>
+          <span>Lundi - Samedi | 7h00 - 18h00</span>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 SAMA Réparation. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
